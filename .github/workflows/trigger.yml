@@ -1,0 +1,14 @@
+name: Trigger
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Demande de requete
+        run: echo "Pull request detectee"
